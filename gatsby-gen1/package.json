@@ -1,0 +1,23 @@
+{
+  "name": "my-gatsby-builder-test",
+  "version": "1.0.0",
+  "private": true,
+  "description": "my-gatsby-builder-test",
+  "keywords": [
+    "gatsby"
+  ],
+  "scripts": {
+    "develop": "gatsby develop",
+    "start": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean"
+  },
+  "dependencies": {
+    "@builder.io/gatsby": "^4.0.0",
+    "@builder.io/react": "^8.0.5",
+    "gatsby": "^5.14.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
