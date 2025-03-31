@@ -1,3 +1,5 @@
+This App runs on localhost:3000/ to make it easy to test with in Builder. If you want to update this, change the port in /angular.json
+
 Change the API in the environments.ts
 # MyApp
 
@@ -5,7 +7,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Run `ng serve` for a dev server. Navigate to `http://localhost:3000/`. The application will automatically reload if you change any of the source files.
 
 ## Code scaffolding
 
