@@ -5,7 +5,7 @@ import { onMounted, ref } from 'vue';
 
 const content = ref<BuilderContent | null>(null);
 // Add your Public API Key below
-const apiKey = 'd4173130c72d466386720bb5a107ae34';
+const apiKey = 'YOUR_API_KEY';
 const canShowContent = ref(false);
 const model = 'vue-page';
 

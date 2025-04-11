@@ -6,5 +6,6 @@ Next.js 15 introduces Turbopack, which is incompatible with the Builder CLI. See
 
 
 To Get Started:
-Change the .env file to include your Builder API key
-Change the page model name in the app/[...page]/page.tsx file (if yours is different from the default "page")
+Add your API key to .env 
+npm install 
+npm run dev

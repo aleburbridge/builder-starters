@@ -20,7 +20,7 @@ import {
     searchParams: Record<string, string>;
   }
   
-  const PUBLIC_API_KEY = 'd4173130c72d466386720bb5a107ae34';
+  const PUBLIC_API_KEY = 'YOUR_API_KEY';
   
   export default async function Page(props: PageProps) {
     const urlPath = '/' + (props.params?.slug?.join('/') || '');

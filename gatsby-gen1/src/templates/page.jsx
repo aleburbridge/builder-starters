@@ -5,7 +5,7 @@ import { builder, BuilderComponent } from '@builder.io/react';
 
 // Initialize the Builder SDK with your organization's API Key
 // Find the API Key on: https://builder.io/account/settings
-builder.init('d4173130c72d466386720bb5a107ae34')
+builder.init('YOUR_API_KEY')
 
 // Your template populates your Gatsby pages with your Builder page content.
 function PageTemplate({ data }) {

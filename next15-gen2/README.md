@@ -6,6 +6,5 @@ Next.js 15 introduces Turbopack
 
 To Get Started:
 Change the API key in [...slug]/page.tsx
-
-Run the dev server:
+npm install
 npm run dev

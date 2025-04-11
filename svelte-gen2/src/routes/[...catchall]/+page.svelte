@@ -3,8 +3,8 @@
 <script lang="ts">
     import { isPreviewing, Content } from "@builder.io/sdk-svelte";
   
-    const apiKey = 'd4173130c72d466386720bb5a107ae34';
-    const model = 'svelte-page';
+    const apiKey = 'YOUR_API_KEY';
+    const model = 'page';
   
     // Define the type for data
     interface PageData {
