@@ -9,7 +9,7 @@ Builder.registerComponent(Counter, {
   inputs: [
     {
       name: "initialCount",
-      type: "number",
+      type: "string",
     },
   ],
 });

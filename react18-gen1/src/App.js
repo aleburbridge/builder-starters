@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { BuilderComponent, builder, useIsPreviewing } from "@builder.io/react";
 
 // Put your API key here
-builder.init('YOUR_API_KEY');
+builder.init('d4173130c72d466386720bb5a107ae34');
 
 // set whether you're using the Visual Editor,
 // whether there are changes,

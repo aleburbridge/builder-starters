@@ -20,11 +20,11 @@ import {
     searchParams: Record<string, string>;
   }
   
-  const PUBLIC_API_KEY = 'YOUR_API_KEY';
+  const PUBLIC_API_KEY = 'd4173130c72d466386720bb5a107ae34';
   
   export default async function Page(props: PageProps) {
     const urlPath = '/' + (props.params?.slug?.join('/') || '');
-  
+
     const content = await fetchOneEntry({
       options: getBuilderSearchParams(props.searchParams),
       apiKey: PUBLIC_API_KEY,
@@ -32,8 +32,15 @@ import {
       userAttributes: { urlPath },
     });
   
-    const canShowContent = content || isPreviewing(props.searchParams);
+    const peopleContent = await fetchOneEntry({
+      options: getBuilderSearchParams(props.searchParams),
+      apiKey: PUBLIC_API_KEY,
+      model: 'people',
+      userAttributes: { urlPath },
+    });
   
+    const canShowContent = peopleContent || isPreviewing(props.searchParams);
+    console.log("content is",peopleContent);
     if (!canShowContent) {
       return (
         <>
@@ -42,5 +49,17 @@ import {
         </>
       );
     }
-    return <Content content={content} apiKey={PUBLIC_API_KEY} model="page" />;
+    return <>
+    <p>the content is</p>
+    <pre>
+      {JSON.stringify(peopleContent, null, 2)}
+    </pre>
+
+    <p>this variation is</p>
+    <pre>
+      {JSON.stringify(peopleContent?.data?.sku, null, 2)}
+    </pre>
+    <Content content={content} apiKey={PUBLIC_API_KEY} model="page" />
+    </>
   }
+  
